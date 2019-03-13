@@ -6,7 +6,7 @@ package com.example.nicholas.mall;
 
 public class Department extends Store {
 
-    public String merchandise;
+    private String merchandise;
 
     public int getService() {
         return getService;
@@ -22,7 +22,7 @@ public class Department extends Store {
 
 
     //clerk
-    public int getEmployeeRole() {
+    public String getEmployeeRole() {
         return getEmployeeRole;
     }
 
@@ -31,7 +31,7 @@ public class Department extends Store {
     }
 
     //cashier
-    public int getEmployeeRole() {
+    public String getEmployeeRole() {
         return getEmployeeRole;
     }
 

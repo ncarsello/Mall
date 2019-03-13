@@ -6,7 +6,7 @@ package com.example.nicholas.mall;
 
 public class Entertainment extends Store {
 
-    public String entertainmentType;
+    private String entertainmentTypes;
 
 
 

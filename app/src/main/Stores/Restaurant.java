@@ -6,7 +6,7 @@ package com.example.nicholas.mall;
 
 public class Restaurant extends Store {
 
-    public String foodTypes;
+    private String foodTypes;
 
     public int getListInventory() {
         return getListInventory();
@@ -18,7 +18,7 @@ public class Restaurant extends Store {
 
 
     //chef
-    public int getEmployeeRole() {
+    public String getEmployeeRole() {
         return getEmployeeRole;
     }
 
@@ -27,7 +27,7 @@ public class Restaurant extends Store {
     }
 
     //cashier
-    public int getEmployeeRole() {
+    public String getEmployeeRole() {
         return getEmployeeRole;
     }
 

@@ -6,28 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 
 public class Mall {
 
-    public boolean isOpen;
-    public int numberOfStores;
-    public String employee;
+    private boolean isOpen;
+    private int numberOfStores;
+    private String employee;
 
     public Mall() {}
-
-
-    public boolean getOpenFacility() {
-        return getOpenFacility();
-    }
-
-    public void setOpenFacility(String openFacility) {
-        this.openFacility = openFacility;
-    }
-
-    public boolean getCloseFacility() {
-        return getCloseFacility();
-    }
-
-    public void setCloseFacility(String closeFacility) {
-        this.closeFacility = closeFacility;
-    }
 
     public String getListEmployee() {
         return getListEmployee;

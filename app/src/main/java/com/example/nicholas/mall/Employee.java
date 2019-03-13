@@ -6,9 +6,9 @@ package com.example.nicholas.mall;
 
 public class Employee{
 
-    public String name;
-    public int age;
-    public String role;
+    private String name;
+    private int age;
+    private String role;
 
     public int returnName() {
         return name;

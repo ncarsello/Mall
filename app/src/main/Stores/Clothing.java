@@ -6,7 +6,7 @@ package com.example.nicholas.mall;
 
 public class Clothing extends Store {
 
-    public String clothesTypes;
+    private String clothesTypes;
 
     public int getListInventory() {
         return getListInventory();
