@@ -14,6 +14,10 @@ public interface Store {
     private String storeLocation;
     private String merchandiseType;
     private String employeeRoles;
+    private String storeName; //for mall and stores in mall
+    private String employeeName; //for mall employee and store employees
+    private String employeePosition; // for mall employee and store employees
+    private boolean isOpen;
 
     public String storeID() {
         return storeID;
@@ -48,5 +52,41 @@ public interface Store {
 
     public int getEmployeeRole() {
         return getEmployeeRole;
+    }
+
+    public void setFacilityType(String type){
+        this.storeType = type;
+    }
+    public String getFacilityType(){
+        return storeType;
+    }
+
+    public void setFacilityName(String name){
+        this.storeName = name;
+    }
+    public String getFacilityName(){
+        return storeName;
+    }
+
+    public void setEmployeeName(String name){
+        this.employeeName = name;
+    }
+    public String getEmployeeName(){
+        return employeeName;
+    }
+
+    public void setEmployeePosition(String position){
+        this.employeePosition = position;
+    }
+    public String getEmployeePosition(){
+        return employeePosition;
+    }
+
+    public void setIsOpen(boolean open){
+        this.isOpen = open;
+    }
+    public boolean getIsOpen(){
+        FacilityUse inUse = new FacilityUse();
+        return isOpen;
     }
 }
