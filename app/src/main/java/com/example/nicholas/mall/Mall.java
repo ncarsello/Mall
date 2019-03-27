@@ -1,4 +1,5 @@
 package com.example.nicholas.mall;
+package Facility
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -36,81 +37,41 @@ public class Mall {
         this.contactInformation = contactInformation;
     }
 
-    String mallType; //for mall and stores in mall
-    String mallName; //for mall and stores in mall
-    String employeeName; //for mall employee and store employees
-    String employeePosition; // for mall employee and store employees
-    private List<Stores> storeList = new ArrayList<Stores>();
-    //	private String storeName;
-    private Stores store = new Stores();
-    private int number;
-    private boolean isOpen;
+        FacilityMaintenance maintenance = new FacilityMaintenance();
+        private String name;
+        private List<Store> storeList = new ArrayList<Store>();
+        private List<MallEmployee> mallEmployees = new ArrayList<MallEmployee>();
 
-    public void setFacilityType(String type){
-        this.mallType = type;
-    }
-    public String getFacilityType(){
-        return mallType;
-    }
 
-    public void setFacilityName(String name){
-        this.mallName = name;
-    }
-    public String getFacilityName(){
-        return mallName;
-    }
 
-    public void setEmployeeName(String name){
-        this.employeeName = name;
-    }
-    public String getEmployeeName(){
-        return employeeName;
-    }
+        public void setName(String name){
+            this.name = name;
+        }
+        public String getName(){
+            return name;
+        }
 
-    public void setEmployeePosition(String position){
-        this.employeePosition = position;
-    }
-    public String getEmployeePosition(){
-        return employeePosition;
-    }
+        public void addStore(Store store){
+            storeList.add(store);
+        }
 
-    public void addStore(Stores mallStore){
-//		this.storeList.add(mallStore); // = mallStore;
-        this.store = mallStore;
-        storeList.add(store);
-    }
+        public List<Store> getStoreListing(){
+            return storeList;
+        }
 
-    public List<Stores> getStore(){
-        return storeList;
-    }
+        public void setMaintenance(Store store, String type){
+            maintenance.setRequireMaintenance(true, store, type);
+            maintenance.sendRequest();
+        }
 
-//	public void setStoreName(String name){
-//		getStore().getFacilityName();
-//	}
+        public void addMallEmployee(MallEmployee employee){
+            mallEmployees.add(employee);
+        }
 
-    public void setStoreNumber(int storenumber){
-        this.number = storenumber;
-        getStore().get(storenumber);
-    }
-
-    public Stores getStoreNumber(){
-        return getStore().get(number);
-    }
-
-    public String getStoreName(){
-        return getStoreNumber().getFacilityName();
-    }
-
-    public void requireMaintenance(Facility store){
-        Maintenance request = new Maintenance();
-        getStoreNumber().setIsOpen(false);
-        request.checkForMaintenance(store);
-    }
-
-    public void setIsOpen(boolean b) {
-        this.isOpen = b;
+        public List<MallEmployee> getMallEmployeeList(){
+            return mallEmployees;
+        }
 
     }
-    public boolean getIsOpen() {
-        return isOpen;}
+
 }
