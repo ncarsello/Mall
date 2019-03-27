@@ -1,3 +1,4 @@
+import Employees.MallEmployee;
 import Facility.ClothingStore;
 import Facility.DepartmentStore;
 import Facility.Facility;
@@ -37,6 +38,17 @@ public class Main {
         mallFacility.setMaintenance(mallFacility.getStoreListing().get(2), mallFacility.getStoreListing().get(2).getType());
         mallFacility.addMallEmployee(Bill);
         System.out.println(mallFacility.getMallEmployeeList().get(0).getEmployee() + " " + mallFacility.getMallEmployeeList().get(0).getPosition());
+
+        Employee securityguard = new MallEmployee();
+        securityguard.setName("qwerty");
+        securityguard.setAge(107);
+        securityguard.setRole("Food Court Security");
+
+        Employee janitor = new MallEmployee();
+        janitor.setName("asdfg");
+        janitor.setAge(200);
+        janitor.setRole("Department Store Janitor");
+
 //		mallFacility.setEmployee("Bob", "Janitor");
 //		mallFacility.addEmployee();
 //		mallFacility.setEmployee("Bill", "Security");
