@@ -1,4 +1,5 @@
 package com.example.nicholas.mall;
+package Facility
 
 public interface Store {
     //store is an interface because there is a lot of different stores. so make store an interface.

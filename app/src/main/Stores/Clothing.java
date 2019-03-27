@@ -1,4 +1,5 @@
 package com.example.nicholas.mall;
+package Facility
 
 /**
  * Created by nicholas on 24 February  2019.

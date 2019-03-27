@@ -1,4 +1,5 @@
 package com.example.nicholas.mall;
+package Facility
 
 // an attempt at a bean factory
 import org.springframework.beans.BeansException;
