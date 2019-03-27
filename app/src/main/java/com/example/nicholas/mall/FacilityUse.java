@@ -7,6 +7,23 @@ package Facility
 
 public interface FacilityUse {
 
+	public String getUse() {
+		return use;
+	}
+
+	public boolean storeOpen (String storeOpen) {
+		this.storeOpen = storeOpen;
+	}
+
+	public int getCost() {
+		return cost;
+	}
+
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+
+	
     public object isStoreOpen();
 
 	public object leaseStoreSpace();
