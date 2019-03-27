@@ -15,6 +15,10 @@ public interface FacilityUse {
 		this.storeOpen = storeOpen;
 	}
 
+	public void setDetails(String details) {
+		this.details = details;
+	}
+
 	public int getCost() {
 		return cost;
 	}
@@ -23,7 +27,7 @@ public interface FacilityUse {
 		this.cost = cost;
 	}
 
-	
+
     public object isStoreOpen();
 
 	public object leaseStoreSpace();
