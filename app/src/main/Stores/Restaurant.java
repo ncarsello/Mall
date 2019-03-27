@@ -4,33 +4,21 @@ package com.example.nicholas.mall;
  * Created by nicholas on 24 February  2019.
  */
 
-public class Restaurant extends Store {
+public class Restaurant extends Store{
+        private String name;
+        private String type;
 
-    private String foodTypes;
+        public void setName(String name){
+            this.name = name;
+        }
+        public String getName(){
+            return name;
+        }
 
-    public int getListInventory() {
-        return getListInventory();
-    }
-
-    public void setListInventory(String foodtypes) {
-        this.foodtypes = foodtypes;
-    }
-
-
-    //chef
-    public String getEmployeeRole() {
-        return getEmployeeRole;
-    }
-
-    public void setEmployeeRole(String chefrole) {
-        this.chefrole = chefrole;
-    }
-
-    //cashier
-    public String getEmployeeRole() {
-        return getEmployeeRole;
-    }
-
-    public void setEmployeeRole(String cashierrole) {
-        this.role = cashierrole;
+        public void setType(String type){
+            this.type = type;
+        }
+        public String getType(){
+            return type;
+        }
     }
