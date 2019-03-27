@@ -18,6 +18,10 @@ public interface FacilityMaintenance
         return details;
     }
 
+    public boolean storeOpen (String storeOpen) {
+        this.storeOpen = storeOpen;
+    }
+
     public void setDetails(String details) {
         this.details = details;
     }
